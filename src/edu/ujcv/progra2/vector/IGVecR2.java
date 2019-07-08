@@ -18,11 +18,11 @@ private double y;
     //this es el vector a
     // c.x = a.x + b.x
     // c.y = a.y + b.y
-    public IGVecR2 suma(IGVecR2 a, IGVecR2 b){
+    public IGVecR2 suma(IGVecR2 b){
 
         IGVecR2 retval = new IGVecR2();
-        retval.x = a.x + b.x;
-        retval.y = a.y + a.y;
+        retval.x = x + b.x;
+        retval.y = y + b.y;
 
         return retval;
     }
