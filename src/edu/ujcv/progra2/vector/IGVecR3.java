@@ -24,18 +24,11 @@ public class IGVecR3 {
         return 0.0;
     }
 
-
-
     public IGVecR3 productoCruz(IGVecR3 b){
 
         return new IGVecR3();
     }
 
-
-    public double determinante(){
-        //TODO: implementar
-        return 0.0;
-    }
 
     public double angulo(IGVecR3 b){
         //TODO: implementar

@@ -51,7 +51,6 @@ private double y;
     //public IGVecR2 productoCruz(IGVecR2 b){
 
     //}
-    
 
     public double angulo(IGVecR2 b){
         //TODO: implementar
