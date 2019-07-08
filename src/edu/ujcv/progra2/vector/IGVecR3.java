@@ -17,8 +17,13 @@ public class IGVecR3 {
     }
 
     public IGVecR3 resta(IGVecR3 b){
-        //TODO: implementar
-        return new IGVecR3();
+        IGVecR3 retval = new IGVecR2();
+
+        retval.x = x - b.x;
+        retval.y = y - b.y;
+        retval.z = z - b.z;
+
+        return retval;
     }
 
     //producto.
