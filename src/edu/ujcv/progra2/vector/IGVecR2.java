@@ -51,12 +51,7 @@ private double y;
     //public IGVecR2 productoCruz(IGVecR2 b){
 
     //}
-
-
-    public double determinante(){
-        //TODO: implementar
-        return 0.0;
-    }
+    
 
     public double angulo(IGVecR2 b){
         //TODO: implementar
