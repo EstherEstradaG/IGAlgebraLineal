@@ -37,15 +37,17 @@ private double y;
 
     //producto.
     public  IGVecR2 escalarPorVector(double alpha){
-        //TODO: implementar
-        return new IGVecR2();
+        IGVecR2 retval = new IGVecR2();
+        retval.x = (alpha * x);
+        retval.y = (alpha * y);
+
+        return retval;
     }
 
     public double productoPunto(IGVecR2 b){
         //TODO: implementar
         return 0.0;
     }
-
 
     // no esta definido en R2.!!!!!
     //public IGVecR2 productoCruz(IGVecR2 b){

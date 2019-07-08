@@ -28,7 +28,7 @@ public class IGVecR4 {
     //public IGVecR4 productoCruz(IGVecR4 b){
 
     //}
-    
+
 
     public double angulo(IGVecR4 b){
         //TODO: implementar
