@@ -27,13 +27,20 @@ public class IGVecR4 {
         retval.z = z - b.z;
 
         return retval;
-        
+
     }
 
     //producto.
     public  IGVecR4 escalarPorVector(double alpha){
-        //TODO: implementar
-        return new IGVecR4();
+
+        IGVecR4 retval = new IGVecR4();
+
+        retval.w = (alpha * w);
+        retval.x = (alpha * x);
+        retval.y = (alpha * y);
+        retval.z = (alpha * z);
+
+        return retval;
     }
 
     public double productoPunto(IGVecR4 b){

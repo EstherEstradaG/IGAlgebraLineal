@@ -1,9 +1,15 @@
 package edu.ujcv.progra2.vector;
 
+import java.util.Scanner;
+
 public class IGVecR2 {
 
     //privado los datos
     // un escalar que represente 'x' y 'y' los componentes del vector
+
+
+
+
 
         private double x;
         private double y;
@@ -36,19 +42,36 @@ public class IGVecR2 {
             return retval;
         }
 
-        //producto.
+            public double getX() {
+            return x;
+            }
+
+            public void setX(double x) {
+            this.x = x;
+            }
+
+            public double getY() {
+            return y;
+            }
+
+            public void setY(double y) {
+            this.y = y;
+            }
+
+    //producto.
         public IGVecR2 escalarPorVector ( double alpha){
             IGVecR2 retval = new IGVecR2();
             retval.x = (alpha * x);
             retval.y = (alpha * y);
 
+
             return retval;
         }
 
         public double productoPunto (IGVecR2 b){
-            IGVecR2 retval = new IGVecR2();
-            retval.x = (x * b.x) + (y * b.y);
-            return 0.0;
+            double retval ;
+            retval = (x * b.x) + (y * b.y);
+            return retval ;
         }
 
         // no esta definido en R2.!!!!!

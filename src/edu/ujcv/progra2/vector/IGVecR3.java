@@ -1,5 +1,7 @@
 package edu.ujcv.progra2.vector;
 
+import java.util.Scanner;
+
 public class IGVecR3 {
 
     private double x;
