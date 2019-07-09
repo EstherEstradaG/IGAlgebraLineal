@@ -42,28 +42,12 @@ public class IGVecR2 {
             return retval;
         }
 
-            public double getX() {
-            return x;
-            }
-
-            public void setX(double x) {
-            this.x = x;
-            }
-
-            public double getY() {
-            return y;
-            }
-
-            public void setY(double y) {
-            this.y = y;
-            }
 
     //producto.
         public IGVecR2 escalarPorVector ( double alpha){
             IGVecR2 retval = new IGVecR2();
             retval.x = (alpha * x);
             retval.y = (alpha * y);
-
 
             return retval;
         }
@@ -80,12 +64,28 @@ public class IGVecR2 {
         //}
 
         public double angulo (IGVecR2 b){
-            //TODO: implementar
+            
             return 0.0;
         }
 
-        public double magnitud () {
+        public double magnitud (IGVecR2 b) {
             return Math.sqrt(productoPunto(this));
         }
 
+
+    public double getX() {
+        return x;
+    }
+
+    public void setX(double x) {
+        this.x = x;
+    }
+
+    public double getY() {
+        return y;
+    }
+
+    public void setY(double y) {
+        this.y = y;
+    }
     }

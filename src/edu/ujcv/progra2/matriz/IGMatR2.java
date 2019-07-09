@@ -4,6 +4,8 @@ import edu.ujcv.progra2.vector.IGVecR2;
 
 public class IGMatR2 {
     // TODO: implementar.
+    IGVecR2 f1;
+    IGVecR2 f2;
 
     //double x1,y1;
     //double x2,y2;
@@ -42,4 +44,19 @@ public class IGMatR2 {
 //    }
 
 
+    public IGVecR2 getF1() {
+        return f1;
+    }
+
+    public void setF1(IGVecR2 f1) {
+        this.f1 = f1;
+    }
+
+    public IGVecR2 getF2() {
+        return f2;
+    }
+
+    public void setF2(IGVecR2 f2) {
+        this.f2 = f2;
+    }
 }
