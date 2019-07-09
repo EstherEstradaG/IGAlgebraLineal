@@ -28,8 +28,11 @@ public class IGVecR3 {
 
     //producto.
     public  IGVecR3 escalarPorVector(double alpha){
-        //TODO: implementar
-        return new IGVecR3();
+        IGVecR3 retval = new IGVecR3();
+        retval.x = (alpha * x);
+        retval.y = (alpha * y);
+
+        return retval;
     }
 
     public double productoPunto(IGVecR3 b){
