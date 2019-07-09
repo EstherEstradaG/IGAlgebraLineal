@@ -7,7 +7,7 @@ public class IGVecR3 {
     private double z;
 
     public IGVecR3 suma(IGVecR3 b){
-        IGVecR3 retval = new IGVecR2();
+        IGVecR3 retval = new IGVecR3();
 
         retval.x = x + b.x;
         retval.y = y + b.y;
@@ -17,7 +17,7 @@ public class IGVecR3 {
     }
 
     public IGVecR3 resta(IGVecR3 b){
-        IGVecR3 retval = new IGVecR2();
+        IGVecR3 retval = new IGVecR3();
 
         retval.x = x - b.x;
         retval.y = y - b.y;

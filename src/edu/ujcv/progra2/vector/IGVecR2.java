@@ -46,7 +46,7 @@ private double y;
 
     public double productoPunto(IGVecR2 b){
         IGVecR2 retval = new IGVecR2();
-        retval.x = (x * b.x);
+        retval.x = (x * b.x) + (y * b.y);
         return 0.0;
     }
 
