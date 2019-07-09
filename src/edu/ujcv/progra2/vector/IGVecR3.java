@@ -31,12 +31,13 @@ public class IGVecR3 {
         IGVecR3 retval = new IGVecR3();
         retval.x = (alpha * x);
         retval.y = (alpha * y);
+        retval.z = (alpha * z);
 
         return retval;
     }
 
     public double productoPunto(IGVecR3 b){
-        //TODO: implementar
+
         return 0.0;
     }
 
