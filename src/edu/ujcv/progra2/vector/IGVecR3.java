@@ -38,8 +38,9 @@ public class IGVecR3 {
     }
 
     public double productoPunto(IGVecR3 b){
-
-        return 0.0;
+        double retval ;
+        retval = (x * b.x) + (y * b.y) + (z + b.z);
+        return retval ;
     }
 
     public IGVecR3 productoCruz(IGVecR3 b){

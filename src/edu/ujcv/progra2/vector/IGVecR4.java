@@ -7,7 +7,7 @@ public class IGVecR4 {
     private double y;
     private double z;
 
-    public IGVecR4 suma(IGVecR4 b){
+    public IGVecR4 suma(IGVecR4 b) {
         IGVecR4 retval = new IGVecR4();
 
         retval.w = w + b.w;
@@ -18,7 +18,7 @@ public class IGVecR4 {
         return retval;
     }
 
-    public IGVecR4 resta(IGVecR4 b){
+    public IGVecR4 resta(IGVecR4 b) {
         IGVecR4 retval = new IGVecR4();
 
         retval.w = w - b.w;
@@ -31,7 +31,7 @@ public class IGVecR4 {
     }
 
     //producto.
-    public  IGVecR4 escalarPorVector(double alpha){
+    public IGVecR4 escalarPorVector(double alpha) {
 
         IGVecR4 retval = new IGVecR4();
 
@@ -43,9 +43,10 @@ public class IGVecR4 {
         return retval;
     }
 
-    public double productoPunto(IGVecR4 b){
-        //TODO: implementar
-        return 0.0;
+    public double productoPunto(IGVecR4 b) {
+        double retval;
+        retval = (w * b.w) + (x * b.x) + (y * b.y) + (z + b.z);
+        return retval;
     }
 
 
@@ -55,14 +56,16 @@ public class IGVecR4 {
     //}
 
 
-    public double angulo(IGVecR4 b){
+    public double angulo(IGVecR4 b) {
         //TODO: implementar
         return 0.0;
     }
 
-    public double magnitud(){
+    public double magnitud() {
         return Math.sqrt(productoPunto(this));
     }
+
+
 
     public double getW() {
         return w;

@@ -4,11 +4,8 @@ import edu.ujcv.progra2.utility.LectorDeTecladoValidado;
 import edu.ujcv.progra2.vector.IGVecR3;
 import edu.ujcv.progra2.vector.IGVecR2;
 import edu.ujcv.progra2.vector.IGVecR4;
-import edu.ujcv.progra2.matriz.IGMatR2;
-import edu.ujcv.progra2.matriz.IGMatR3;
-import edu.ujcv.progra2.matriz.IGMatR4;
+
 import java.util.Scanner;
-import edu.ujcv.progra2.Main;
 
 public class Main {
 
