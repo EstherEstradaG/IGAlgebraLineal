@@ -63,13 +63,14 @@ public class IGVecR2 {
 
         //}
 
-        public double angulo (IGVecR2 b){
-            
-            return 0.0;
+        public double angulo (IGVecR2 b, IGVecR2 a){
+            double retval;
+            retval = Math.acos(a.productoPunto(b)/ magnitud(a) * magnitud(b));
+            return retval;
         }
 
         public double magnitud (IGVecR2 b) {
-            return Math.sqrt(productoPunto(this));
+            return Math.sqrt(productoPunto(b.x,2)) + Math.pow();
         }
 
 
