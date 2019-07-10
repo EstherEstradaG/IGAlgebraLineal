@@ -8,9 +8,6 @@ public class IGVecR2 {
     // un escalar que represente 'x' y 'y' los componentes del vector
 
 
-
-
-
         private double x;
         private double y;
 

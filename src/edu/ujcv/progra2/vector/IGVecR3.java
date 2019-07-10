@@ -48,13 +48,14 @@ public class IGVecR3 {
     }
 
 
-    public double angulo(IGVecR3 b){
-        //TODO: implementar
-        return 0.0;
+    public double angulo(IGVecR3 b, IGVecR3 a, IGVecR3 c){
+        double retval;
+        retval = Math.acos(a.productoPunto(b)/ magnitud(a) * magnitud(b) * magnitud(c));
+        return Math.toDegrees(retval);
     }
 
-    public double magnitud(){
-        return Math.sqrt(productoPunto(this));
+    public double magnitud(IGVecR3 b){
+        return Math.sqrt(Math.sqrt(Math.pow(b.x,2)) + Math.pow(b.y,2));
     }
 
     public double getX() {
