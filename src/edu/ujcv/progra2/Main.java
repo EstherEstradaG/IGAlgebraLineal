@@ -370,8 +370,39 @@ public class Main {
                     System.out.println("2. IgMatR3");
                     System.out.println("3. IgMatR4");
                     opcion = sc.nextInt();
+
+
+                    if (opcion == 1){
+                        System.out.println("ingrese una opcion");
+                        System.out.println("1. suma");
+                        System.out.println("2. multiplicacion");
+                        System.out.println("3. columna por matriz");
+                        System.out.println("4. escalar por matriz");
+                        System.out.println("5. rotacion");
+                        opcion = sc.nextInt();
+
+                    }
+                    if (opcion == 2){
+                        System.out.println("Ingrese su opcion");
+                        System.out.println("1. rotacion en x");
+                        System.out.println("2. rotacion en y");
+                        System.out.println("3. rotacion en w");
+                        opcion = sc.nextInt();
+                    }
+                    if (opcion == 3){
+                        System.out.println("Ingrese su opcion");
+                        System.out.println("1. rotacion en x");
+                        System.out.println("2. rotacion en y");
+                        System.out.println("3. rotacion en w");
+                        opcion = sc.nextInt();
+
+
+
                 }
-            }
+
+
+
+                }
     }
     }
 }
