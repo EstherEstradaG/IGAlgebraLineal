@@ -112,6 +112,18 @@ public class Main {
                                 System.out.println("El resultado es: " +a.angulo(a, b));
                             }
 
+                            if (opcion == 6){
+                                IGVecR2 a = new IGVecR2();
+                                System.out.println("Ingrese x1 y y1");
+                                a.setX(sc.nextDouble());
+                                a.setY(sc.nextDouble());
+                                IGVecR2 b = new IGVecR2();
+                                System.out.println("Ingrese x2 y y2");
+                                b.setX(sc.nextDouble());
+                                b.setX(sc.nextDouble());
+                                System.out.println("El resultado es: " +a.magnitud(b));
+                            }
+
 
                     }
                     if (opcion == 2) {
@@ -126,17 +138,17 @@ public class Main {
 
                         if (opcion == 1){
                                 IGVecR3 a = new IGVecR3();
-                                System.out.println("Ingrese x1 y y1");
+                                System.out.println("Ingrese x1, y1 y z1");
                                 a.setX(sc.nextDouble());
                                 a.setY(sc.nextDouble());
                                 a.setZ(sc.nextDouble());
                                 IGVecR3 b = new IGVecR3();
-                                System.out.println("Ingrese x2 y y2");
+                                System.out.println("Ingrese x2, y2 y z2");
                                 b.setX(sc.nextDouble());
                                 b.setX(sc.nextDouble());
                                 b.setZ(sc.nextDouble());
                                 IGVecR3 c = new IGVecR3();
-                                System.out.println("Ingrese x3 y y3");
+                                System.out.println("Ingrese x3, y3 y z3");
                                 c.setX(sc.nextDouble());
                                 c.setY(sc.nextDouble());
                                 c.setZ(sc.nextDouble());
@@ -146,17 +158,17 @@ public class Main {
 
                             if (opcion == 2){
                                 IGVecR3 a = new IGVecR3();
-                                System.out.println("Ingrese x1 y y1");
+                                System.out.println("Ingrese x1, y1 y z1");
                                 a.setX(sc.nextDouble());
                                 a.setY(sc.nextDouble());
                                 a.setZ(sc.nextDouble());
                                 IGVecR3 b = new IGVecR3();
-                                System.out.println("Ingrese x2 y y2");
+                                System.out.println("Ingrese x2, y2 y z2");
                                 b.setX(sc.nextDouble());
                                 b.setX(sc.nextDouble());
                                 b.setZ(sc.nextDouble());
                                 IGVecR3 c = new IGVecR3();
-                                System.out.println("Ingrese x3 y y3");
+                                System.out.println("Ingrese x3, y3 y z3");
                                 c.setX(sc.nextDouble());
                                 c.setY(sc.nextDouble());
                                 c.setZ(sc.nextDouble());
@@ -165,7 +177,7 @@ public class Main {
 
                             if (opcion == 3){
                                 IGVecR3 a = new IGVecR3();
-                                System.out.println("Ingrese x1 y y1");
+                                System.out.println("Ingrese x1, y1 y z1");
                                 a.setX(sc.nextDouble());
                                 a.setY(sc.nextDouble());
                                 IGVecR3 b = new IGVecR3();
@@ -178,26 +190,40 @@ public class Main {
 
                             if (opcion == 4){
                                 IGVecR3 a = new IGVecR3();
-                                System.out.println("Ingrese x1 y y1");
+                                System.out.println("Ingrese x1, y1 y z1");
                                 a.setX(sc.nextDouble());
                                 a.setY(sc.nextDouble());
+                                a.setZ(sc.nextDouble());
                                 IGVecR3 b = new IGVecR3();
-                                System.out.println("Ingrese x2 y y2");
+                                System.out.println("Ingrese x2, y2 y z2");
                                 b.setX(sc.nextDouble());
                                 b.setX(sc.nextDouble());
+                                b.setZ(sc.nextDouble());
+                                System.out.println("Ingrese x3, y3 y z3");
+                                IGVecR3 c = new IGVecR3();
+                                c.setX(sc.nextDouble());
+                                c.setX(sc.nextDouble());
+                                c.setZ(sc.nextDouble());
                                 System.out.println("El resultado es: " +a.productoPunto(b));
                             }
 
                             if (opcion == 5){
                                 IGVecR3 a = new IGVecR3();
-                                System.out.println("Ingrese x1 y y1");
+                                System.out.println("Ingrese x1, y1 y z1");
                                 a.setX(sc.nextDouble());
                                 a.setY(sc.nextDouble());
+                                a.setZ(sc.nextDouble());
                                 IGVecR3 b = new IGVecR3();
-                                System.out.println("Ingrese x2 y y2");
+                                System.out.println("Ingrese x2, y2 y z2");
                                 b.setX(sc.nextDouble());
                                 b.setX(sc.nextDouble());
-                                System.out.println("El resultado es: " +a.angulo(b));
+                                b.setZ(sc.nextDouble());
+                                IGVecR3 c = new IGVecR3();
+                                System.out.println("Ingrese x3, y3 y z3");
+                                c.setX(sc.nextDouble());
+                                c.setX(sc.nextDouble());
+                                c.setZ(sc.nextDouble());
+                                System.out.println("El resultado es: " +a.angulo(a,b,c));
                             }
 
                     }
@@ -215,23 +241,29 @@ public class Main {
 
                         if (opcion == 1){
                             IGVecR4 a = new IGVecR4();
-                            System.out.println("Ingrese x1 y y1");
+                            System.out.println("Ingrese w1, x1, y1, z1");
                             a.setW(sc.nextDouble());
                             a.setX(sc.nextDouble());
                             a.setY(sc.nextDouble());
                             a.setZ(sc.nextDouble());
                             IGVecR4 b = new IGVecR4();
-                            System.out.println("Ingrese x2 y y2");
+                            System.out.println("Ingrese w2, x, y2, z2");
                             b.setW(sc.nextDouble());
                             b.setX(sc.nextDouble());
                             b.setX(sc.nextDouble());
                             b.setZ(sc.nextDouble());
                             IGVecR4 c = new IGVecR4();
-                            System.out.println("Ingrese x3 y y3");
+                            System.out.println("Ingrese w3, x3, y3, z3");
                             c.setW(sc.nextDouble());
                             c.setX(sc.nextDouble());
                             c.setY(sc.nextDouble());
                             c.setZ(sc.nextDouble());
+                            IGVecR4 d = new IGVecR4();
+                            System.out.println("Ingrese w4, x4, y4, z4");
+                            d.setW(sc.nextDouble());
+                            d.setX(sc.nextDouble());
+                            d.setY(sc.nextDouble());
+                            d.setZ(sc.nextDouble());
                             System.out.println("El resultado es: " +a.suma(b));
 
                         }
@@ -255,6 +287,12 @@ public class Main {
                             c.setX(sc.nextDouble());
                             c.setY(sc.nextDouble());
                             c.setZ(sc.nextDouble());
+                            IGVecR4 d = new IGVecR4();
+                            System.out.println("Ingrese w4, x4, y4, z4");
+                            d.setW(sc.nextDouble());
+                            d.setX(sc.nextDouble());
+                            d.setY(sc.nextDouble());
+                            d.setZ(sc.nextDouble());
                             System.out.println("El resultado es: " +a.resta(b));
                         }
 
@@ -285,6 +323,18 @@ public class Main {
                             b.setX(sc.nextDouble());
                             b.setX(sc.nextDouble());
                             b.setZ(sc.nextDouble());
+                            IGVecR4 c = new IGVecR4();
+                            System.out.println("Ingrese w4, x4, y4, z4");
+                            c.setW(sc.nextDouble());
+                            c.setX(sc.nextDouble());
+                            c.setY(sc.nextDouble());
+                            c.setZ(sc.nextDouble());
+                            IGVecR4 d = new IGVecR4();
+                            System.out.println("Ingrese w4, x4, y4, z4");
+                            d.setW(sc.nextDouble());
+                            d.setX(sc.nextDouble());
+                            d.setY(sc.nextDouble());
+                            d.setZ(sc.nextDouble());
                             System.out.println("El resultado es: " +a.productoPunto(b));
                         }
 
@@ -301,6 +351,18 @@ public class Main {
                             b.setX(sc.nextDouble());
                             b.setX(sc.nextDouble());
                             b.setZ(sc.nextDouble());
+                            IGVecR4 c = new IGVecR4();
+                            System.out.println("Ingrese w3, x3, y3, z3");
+                            c.setW(sc.nextDouble());
+                            c.setX(sc.nextDouble());
+                            c.setY(sc.nextDouble());
+                            c.setZ(sc.nextDouble());
+                            IGVecR4 d = new IGVecR4();
+                            System.out.println("Ingrese w4, x4, y4, z4");
+                            d.setW(sc.nextDouble());
+                            d.setX(sc.nextDouble());
+                            d.setY(sc.nextDouble());
+                            d.setZ(sc.nextDouble());
                             System.out.println("El resultado es: " +a.angulo(b));
                         }
                     }
