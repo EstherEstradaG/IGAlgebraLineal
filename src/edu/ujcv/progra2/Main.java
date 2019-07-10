@@ -84,7 +84,7 @@ public class Main {
                                 System.out.println("Ingrese alpha");
                                 double alpha = sc.nextDouble();
                                 IGVecR2 resultado = a.escalarPorVector(alpha);
-                                System.out.println("El resultado es: " +resultado.getX(), +resultado.getY());
+                                System.out.println("El resultado es: " +resultado);
 
                             }
 
@@ -172,7 +172,7 @@ public class Main {
                                 System.out.println("Ingrese alpha");
                                 double alpha = sc.nextDouble();
                                 IGVecR3 resultado = a.escalarPorVector(alpha);
-                                System.out.println("El resultado es: " ("+resultado.getX()") , ("+resul.getY()+ "));
+                                System.out.println("El resultado es: " +resultado);
 
                             }
 
@@ -267,8 +267,8 @@ public class Main {
                             a.setZ(sc.nextDouble());
                             System.out.println("Ingrese alpha");
                             double alpha = sc.nextDouble();
-                            IGVecR3 resultado = a.escalarPorVector(alpha);
-                            System.out.println("El resultado es: "(+resultado.getX() ,+resultado.getY());
+                            IGVecR4 resultado = a.escalarPorVector(alpha);
+                            System.out.println("El resultado es: " +resultado);
 
                         }
 
