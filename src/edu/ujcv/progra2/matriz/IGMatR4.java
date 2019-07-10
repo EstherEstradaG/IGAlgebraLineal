@@ -27,7 +27,7 @@ public class IGMatR4 {
          return retval;
     }
 
-     public static IGVecR2 rotacionY (double angulo, IGVecR2 vector){
+     public  IGVecR2 rotacionY (double angulo, IGVecR2 vector){
          IGMatR2 retval = new IGMatR2();
          retval.f1.setX(this.f1.getX() * Math.cos(angulo));
          retval.f1.setY(this.f1.getY() * (-Math.sin(angulo)));

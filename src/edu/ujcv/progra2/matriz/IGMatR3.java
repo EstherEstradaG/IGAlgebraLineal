@@ -1,11 +1,14 @@
 package edu.ujcv.progra2.matriz;
 
+import edu.ujcv.progra2.vector.IGVecR2;
 import edu.ujcv.progra2.vector.IGVecR3;
 
 public class IGMatR3 {
+    IGVecR2 f1;
+    IGVecR2 f2;
+    IGVecR2 f3;
 
-
-    public static IGVecR3 rotacionZ (double angulo, IGVecR3 vector){
+    public  IGVecR3 rotacionZ (double angulo, IGVecR3 vector){
         IGMatR2 retval = new IGMatR2();
         retval.f1.setX(this.f1.getX() * Math.cos(angulo));
         retval.f1.setY(this.f1.getY() * (-Math.sin(angulo)));
@@ -14,7 +17,7 @@ public class IGMatR3 {
         return retval;
      }
 
-     public static IGVecR3 rotacionX (double angulo, IGVecR3 vector){
+     public  IGVecR3 rotacionX (double angulo, IGVecR3 vector){
         IGMatR2 retval = new IGMatR2();
         retval.f1.setX(this.f1.getX() * Math.cos(angulo));
         retval.f1.setY(this.f1.getY() * (-Math.sin(angulo)));
@@ -23,7 +26,7 @@ public class IGMatR3 {
         return retval;
     }
 
-     public static IGVecR3 rotacionY (double angulo, IGVecR3 vector){
+     public  IGVecR3 rotacionY (double angulo, IGVecR3 vector){
         IGMatR2 retval = new IGMatR2();
         retval.f1.setX(this.f1.getX() * Math.cos(angulo));
         retval.f1.setY(this.f1.getY() * (-Math.sin(angulo)));
