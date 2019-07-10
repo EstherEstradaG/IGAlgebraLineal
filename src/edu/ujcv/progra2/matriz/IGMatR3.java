@@ -14,6 +14,7 @@ public class IGMatR3 {
         retval.f1.setY(this.f1.getY() * (-Math.sin(angulo)));
         retval.f2.setX(this.f2.getX() * Math.cos(angulo));
         retval.f2.setY(this.f2.getY() * Math.sin(angulo));
+        r
         return retval;
      }
 
