@@ -8,13 +8,13 @@ public class IGMatR3 {
     IGVecR2 f2;
     IGVecR2 f3;
 
-    public  IGVecR3 rotacionZ (double angulo, IGVecR3 vector){
+    public  IGVecR2 rotacionZ (double angulo, IGVecR2 vector){
         IGMatR2 retval = new IGMatR2();
         retval.f1.setX(this.f1.getX() * Math.cos(angulo));
         retval.f1.setY(this.f1.getY() * (-Math.sin(angulo)));
         retval.f2.setX(this.f2.getX() * Math.cos(angulo));
         retval.f2.setY(this.f2.getY() * Math.sin(angulo));
-        r
+        
         return retval;
      }
 
