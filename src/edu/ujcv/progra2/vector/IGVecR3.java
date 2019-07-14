@@ -43,11 +43,6 @@ public class IGVecR3 {
         return retval ;
     }
 
-    public IGVecR3 productoCruz(IGVecR3 b){
-
-        return new IGVecR3();
-    }
-
 
     public double angulo(IGVecR3 b, IGVecR3 a, IGVecR3 c){
         double retval;

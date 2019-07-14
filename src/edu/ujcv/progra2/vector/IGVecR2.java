@@ -12,13 +12,21 @@ public class IGVecR2 {
         private double y;
 
         // publico los constructores por defecto, copia, y conveniencia. recuerden a bob
+public IGVecR2(){
+    this.x = 0;
+    this.y = 0;
+}
 
+public IGVecR2 (IGVecR2 b){
+    this.x = b.x;
+    this.y = b.y;
+}
 
         // publico accesoras y mutadoras
 
 
-        //publico interfase
 
+        //publico interfase
         //this es el vector a
         // c.x = a.x + b.x
         // c.y = a.y + b.y
