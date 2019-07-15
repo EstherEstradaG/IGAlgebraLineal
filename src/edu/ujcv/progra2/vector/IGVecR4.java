@@ -7,6 +7,14 @@ public class IGVecR4 {
     private double y;
     private double z;
 
+    public IGVecR4(){
+        this.w = 0;
+        this.x = 0;
+        this.y = 0;
+    }
+
+
+
     public IGVecR4 suma(IGVecR4 b) {
         IGVecR4 retval = new IGVecR4();
 
