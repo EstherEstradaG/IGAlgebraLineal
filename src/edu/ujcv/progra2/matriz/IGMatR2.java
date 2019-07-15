@@ -41,11 +41,11 @@ public class IGMatR2 {
         return retval;
     }
 
-    public IGVecR2 multvector (IGVecR2 v){
+    public IGVecR2 multvector (IGVecR2 vector){
         IGVecR2 retval = new IGVecR2();
 
-        retval.setX(v.productoPunto(this.getF2()));
-        retval.setY(v.productoPunto(this.getF2()));
+        retval.setX(vector.productoPunto(this.getF2()));
+        retval.setY(vector.productoPunto(this.getF2()));
         return retval;
     }
 
