@@ -66,6 +66,7 @@ public IGVecR4(double w, double x, double y, double z){
 
     public double productoPunto(IGVecR4 b) {
         double retval;
+
         retval = (w * b.w) + (x * b.x) + (y * b.y) + (z + b.z);
         return retval;
     }
@@ -77,13 +78,15 @@ public IGVecR4(double w, double x, double y, double z){
     //}
 
 
-    public double angulo(IGVecR4 b) {
-        //TODO: implementar
-        return 0.0;
+    public double angulo(IGVecR4 b, IGVecR4 a) {
+        double retval;
+        retval = Math.cos(a.productoPunto(b)/(magnitud(a)* magnitud(b)));
+        return Math.toDegrees(retval);
     }
 
-    public double magnitud() {
-        return Math.sqrt(productoPunto(this));
+    public double magnitud(IGVecR4 b) {
+
+        return Math.sqrt((Math.pow(b.x,2) + Math.pow(b.y,2) + Math.pow(b.z,2) + Math.pow (b.w,2)));
     }
 
 
