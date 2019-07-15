@@ -1,5 +1,6 @@
 package edu.ujcv.progra2;
 
+import edu.ujcv.progra2.matriz.IGMatR2;
 import edu.ujcv.progra2.vector.IGVecR3;
 import edu.ujcv.progra2.vector.IGVecR2;
 import edu.ujcv.progra2.vector.IGVecR4;
@@ -132,24 +133,25 @@ public class Main {
                     System.out.println("4.producto punto");
                     System.out.println("5. angulo");
                     System.out.println("6. magnitud");
-                    opcion = leerEntero(sc,"ingrese su opcion","caracter no valido ");
+                    System.out.println("7. productor cruz");
+                    opcion = leerEntero(sc, "ingrese su opcion", "caracter no valido ");
 
                     if (opcion == 1) {
                         IGVecR3 a = new IGVecR3();
                         System.out.println("Ingrese x1, y1 y z1");
-                        a.setX(leerReal(sc,"x1","caracter no valido "));
-                        a.setY(leerReal(sc,"Y1","caracter no valido "));
-                        a.setZ(leerReal(sc,"Z1","caracter no valido "));
+                        a.setX(leerReal(sc, "x1", "caracter no valido "));
+                        a.setY(leerReal(sc, "Y1", "caracter no valido "));
+                        a.setZ(leerReal(sc, "Z1", "caracter no valido "));
                         IGVecR3 b = new IGVecR3();
                         System.out.println("Ingrese x2, y2 y z2");
-                        b.setX(leerReal(sc,"x2","caracter no valido "));
-                        b.setY(leerReal(sc,"y2","caracter no valido "));
-                        b.setZ(leerReal(sc,"z2","caracter no valido "));
+                        b.setX(leerReal(sc, "x2", "caracter no valido "));
+                        b.setY(leerReal(sc, "y2", "caracter no valido "));
+                        b.setZ(leerReal(sc, "z2", "caracter no valido "));
                         IGVecR3 c = new IGVecR3();
                         System.out.println("Ingrese x3, y3 y z3");
-                        c.setX(leerReal(sc,"x3","caracter no valido "));
-                        c.setY(leerReal(sc,"y3","caracter no valido "));
-                        c.setZ(leerReal(sc,"z3","caracter no valido "));
+                        c.setX(leerReal(sc, "x3", "caracter no valido "));
+                        c.setY(leerReal(sc, "y3", "caracter no valido "));
+                        c.setZ(leerReal(sc, "z3", "caracter no valido "));
                         IGVecR3 r = a.suma(b);
                         System.out.println("El resultado es: " + r.getX() + "," + r.getY() + "," + r.getZ());
 
@@ -158,19 +160,19 @@ public class Main {
                     if (opcion == 2) {
                         IGVecR3 a = new IGVecR3();
                         System.out.println("Ingrese x1, y1 y z1");
-                        a.setX(leerReal(sc,"x1","caracter no valido "));
-                        a.setY(leerReal(sc,"Y1","caracter no valido "));
-                        a.setZ(leerReal(sc,"Z1","caracter no valido "));
+                        a.setX(leerReal(sc, "x1", "caracter no valido "));
+                        a.setY(leerReal(sc, "Y1", "caracter no valido "));
+                        a.setZ(leerReal(sc, "Z1", "caracter no valido "));
                         IGVecR3 b = new IGVecR3();
                         System.out.println("Ingrese x2, y2 y z2");
-                        b.setX(leerReal(sc,"x2","caracter no valido "));
-                        b.setY(leerReal(sc,"y2","caracter no valido "));
-                        b.setZ(leerReal(sc,"z2","caracter no valido "));
+                        b.setX(leerReal(sc, "x2", "caracter no valido "));
+                        b.setY(leerReal(sc, "y2", "caracter no valido "));
+                        b.setZ(leerReal(sc, "z2", "caracter no valido "));
                         IGVecR3 c = new IGVecR3();
                         System.out.println("Ingrese x3, y3 y z3");
-                        c.setX(leerReal(sc,"x3","caracter no valido "));
-                        c.setY(leerReal(sc,"y3","caracter no valido "));
-                        c.setZ(leerReal(sc,"z3","caracter no valido "));
+                        c.setX(leerReal(sc, "x3", "caracter no valido "));
+                        c.setY(leerReal(sc, "y3", "caracter no valido "));
+                        c.setZ(leerReal(sc, "z3", "caracter no valido "));
                         IGVecR3 r = a.resta(b);
                         System.out.println("El resultado es: " + r.getX() + "," + r.getY() + "," + r.getZ());
                     }
@@ -178,19 +180,19 @@ public class Main {
                     if (opcion == 3) {
                         IGVecR3 a = new IGVecR3();
                         System.out.println("Ingrese x1, y1 y z1");
-                        a.setX(leerReal(sc,"x1","caracter no valido "));
-                        a.setY(leerReal(sc,"Y1","caracter no valido "));
-                        a.setZ(leerReal(sc,"Z1","caracter no valido "));
+                        a.setX(leerReal(sc, "x1", "caracter no valido "));
+                        a.setY(leerReal(sc, "Y1", "caracter no valido "));
+                        a.setZ(leerReal(sc, "Z1", "caracter no valido "));
                         IGVecR3 b = new IGVecR3();
                         System.out.println("Ingrese x2, y2 y z2");
-                        b.setX(leerReal(sc,"x2","caracter no valido "));
-                        b.setY(leerReal(sc,"y2","caracter no valido "));
-                        b.setZ(leerReal(sc,"z2","caracter no valido "));
+                        b.setX(leerReal(sc, "x2", "caracter no valido "));
+                        b.setY(leerReal(sc, "y2", "caracter no valido "));
+                        b.setZ(leerReal(sc, "z2", "caracter no valido "));
                         IGVecR3 c = new IGVecR3();
                         System.out.println("Ingrese x3, y3 y z3");
-                        c.setX(leerReal(sc,"x3","caracter no valido "));
-                        c.setY(leerReal(sc,"y3","caracter no valido "));
-                        c.setZ(leerReal(sc,"z3","caracter no valido "));
+                        c.setX(leerReal(sc, "x3", "caracter no valido "));
+                        c.setY(leerReal(sc, "y3", "caracter no valido "));
+                        c.setZ(leerReal(sc, "z3", "caracter no valido "));
                         System.out.println("Ingrese alpha");
                         double alpha = sc.nextDouble();
                         IGVecR3 r = a.escalarPorVector(alpha);
@@ -201,19 +203,19 @@ public class Main {
                     if (opcion == 4) {
                         IGVecR3 a = new IGVecR3();
                         System.out.println("Ingrese x1, y1 y z1");
-                        a.setX(leerReal(sc,"x1","caracter no valido "));
-                        a.setY(leerReal(sc,"Y1","caracter no valido "));
-                        a.setZ(leerReal(sc,"Z1","caracter no valido "));
+                        a.setX(leerReal(sc, "x1", "caracter no valido "));
+                        a.setY(leerReal(sc, "Y1", "caracter no valido "));
+                        a.setZ(leerReal(sc, "Z1", "caracter no valido "));
                         IGVecR3 b = new IGVecR3();
                         System.out.println("Ingrese x2, y2 y z2");
-                        b.setX(leerReal(sc,"x2","caracter no valido "));
-                        b.setY(leerReal(sc,"y2","caracter no valido "));
-                        b.setZ(leerReal(sc,"z2","caracter no valido "));
+                        b.setX(leerReal(sc, "x2", "caracter no valido "));
+                        b.setY(leerReal(sc, "y2", "caracter no valido "));
+                        b.setZ(leerReal(sc, "z2", "caracter no valido "));
                         IGVecR3 c = new IGVecR3();
                         System.out.println("Ingrese x3, y3 y z3");
-                        c.setX(leerReal(sc,"x3","caracter no valido "));
-                        c.setY(leerReal(sc,"y3","caracter no valido "));
-                        c.setZ(leerReal(sc,"z3","caracter no valido "));
+                        c.setX(leerReal(sc, "x3", "caracter no valido "));
+                        c.setY(leerReal(sc, "y3", "caracter no valido "));
+                        c.setZ(leerReal(sc, "z3", "caracter no valido "));
                         double r = a.productoPunto(b);
                         System.out.println("El resultado es: " + r);
                     }
@@ -221,19 +223,19 @@ public class Main {
                     if (opcion == 5) {
                         IGVecR3 a = new IGVecR3();
                         System.out.println("Ingrese x1, y1 y z1");
-                        a.setX(leerReal(sc,"x1","caracter no valido "));
-                        a.setY(leerReal(sc,"Y1","caracter no valido "));
-                        a.setZ(leerReal(sc,"Z1","caracter no valido "));
+                        a.setX(leerReal(sc, "x1", "caracter no valido "));
+                        a.setY(leerReal(sc, "Y1", "caracter no valido "));
+                        a.setZ(leerReal(sc, "Z1", "caracter no valido "));
                         IGVecR3 b = new IGVecR3();
                         System.out.println("Ingrese x2, y2 y z2");
-                        b.setX(leerReal(sc,"x2","caracter no valido "));
-                        b.setY(leerReal(sc,"y2","caracter no valido "));
-                        b.setZ(leerReal(sc,"z2","caracter no valido "));
+                        b.setX(leerReal(sc, "x2", "caracter no valido "));
+                        b.setY(leerReal(sc, "y2", "caracter no valido "));
+                        b.setZ(leerReal(sc, "z2", "caracter no valido "));
                         IGVecR3 c = new IGVecR3();
                         System.out.println("Ingrese x3, y3 y z3");
-                        c.setX(leerReal(sc,"x3","caracter no valido "));
-                        c.setY(leerReal(sc,"y3","caracter no valido "));
-                        c.setZ(leerReal(sc,"z3","caracter no valido "));
+                        c.setX(leerReal(sc, "x3", "caracter no valido "));
+                        c.setY(leerReal(sc, "y3", "caracter no valido "));
+                        c.setZ(leerReal(sc, "z3", "caracter no valido "));
                         double r = a.angulo(a, b);
                         System.out.println("El resultado es: " + r);
                     }
@@ -241,25 +243,48 @@ public class Main {
                     if (opcion == 6) {
                         IGVecR3 a = new IGVecR3();
                         System.out.println("Ingrese x1 y y1");
-                        a.setX(leerReal(sc,"x1","caracter no valido "));
-                        a.setY(leerReal(sc,"Y1","caracter no valido "));
-                        a.setZ(leerReal(sc,"Z1","caracter no valido "));
+                        a.setX(leerReal(sc, "x1", "caracter no valido "));
+                        a.setY(leerReal(sc, "Y1", "caracter no valido "));
+                        a.setZ(leerReal(sc, "Z1", "caracter no valido "));
                         IGVecR3 b = new IGVecR3();
                         System.out.println("Ingrese x2, y2 y z2");
-                        b.setX(leerReal(sc,"x2","caracter no valido "));
-                        b.setY(leerReal(sc,"y2","caracter no valido "));
-                        b.setZ(leerReal(sc,"z2","caracter no valido "));
+                        b.setX(leerReal(sc, "x2", "caracter no valido "));
+                        b.setY(leerReal(sc, "y2", "caracter no valido "));
+                        b.setZ(leerReal(sc, "z2", "caracter no valido "));
                         IGVecR3 c = new IGVecR3();
                         System.out.println("Ingrese x3, y3 y z3");
-                        c.setX(leerReal(sc,"x3","caracter no valido "));
-                        c.setY(leerReal(sc,"y3","caracter no valido "));
-                        c.setZ(leerReal(sc,"z3","caracter no valido "));
+                        c.setX(leerReal(sc, "x3", "caracter no valido "));
+                        c.setY(leerReal(sc, "y3", "caracter no valido "));
+                        c.setZ(leerReal(sc, "z3", "caracter no valido "));
                         double r = a.magnitud(b);
                         System.out.println("El resultado es: " + r);
 
                     }
 
-                    if (opcion == 3) {
+                    if (opcion == 7) {
+                        IGVecR3 a = new IGVecR3();
+                        System.out.println("Ingrese x1, y1 y z1");
+                        a.setX(leerReal(sc, "x1", "caracter no valido "));
+                        a.setY(leerReal(sc, "Y1", "caracter no valido "));
+                        a.setZ(leerReal(sc, "Z1", "caracter no valido "));
+                        IGVecR3 b = new IGVecR3();
+                        System.out.println("Ingrese x2, y2 y z2");
+                        b.setX(leerReal(sc, "x2", "caracter no valido "));
+                        b.setY(leerReal(sc, "y2", "caracter no valido "));
+                        b.setZ(leerReal(sc, "z2", "caracter no valido "));
+                        IGVecR3 c = new IGVecR3();
+                        System.out.println("Ingrese x3, y3 y z3");
+                        c.setX(leerReal(sc, "x3", "caracter no valido "));
+                        c.setY(leerReal(sc, "y3", "caracter no valido "));
+                        c.setZ(leerReal(sc, "z3", "caracter no valido "));
+                        System.out.println("Ingrese alpha");
+                        double alpha = sc.nextDouble();
+                        IGVecR3 r = a.productoCruz(b);
+                        System.out.println("El resultado es: " + r.getX() + "," + r.getY() + "," + r.getZ());
+
+                    }
+                }
+                if (opcion == 3) {
                         System.out.println("Elija su opcion");
                         System.out.println("1. suma");
                         System.out.println("2. resta");
@@ -486,7 +511,6 @@ public class Main {
                     }
                 }
             }
-        }
     public static double leerReal(Scanner sc,String mensaje, String mensajeError) {
         double retval = 0;
         System.out.println(mensaje);
