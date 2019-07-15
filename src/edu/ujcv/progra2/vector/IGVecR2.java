@@ -21,8 +21,12 @@ public IGVecR2 (IGVecR2 b){
     this.x = b.x;
     this.y = b.y;
 }
+    public IGVecR2 (double x, double y){
+        this.x = x;
+        this.y = y;
+    }
 
-        // publico accesoras y mutadoras
+    // publico accesoras y mutadoras
 
 
 
