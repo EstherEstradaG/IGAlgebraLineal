@@ -20,10 +20,6 @@ public class Main {
         System.out.println("0. Salir");
         int opcion = sc.nextInt();
 
-        LectorDeTecladoValidado LDTV = LectorDeTecladoValidado.getInstance();
-        double x = LDTV.getDouble("ingrese un numero real", "intente de nuevo");
-        System.out.println("su numero es: " + x);
-
 
         while (opcion != 0) {
 
@@ -48,6 +44,7 @@ public class Main {
 
                     if (opcion == 1) {
                         IGVecR2 a = new IGVecR2();
+
                         System.out.println("Ingrese x1 y y1");
                         a.setX(sc.nextDouble());
                         a.setY(sc.nextDouble());
@@ -56,6 +53,7 @@ public class Main {
                         b.setX(sc.nextDouble());
                         b.setX(sc.nextDouble());
                         System.out.println("El resultado es: " + a.suma(b));
+
 
                     }
 
@@ -219,7 +217,7 @@ public class Main {
                         c.setX(sc.nextDouble());
                         c.setX(sc.nextDouble());
                         c.setZ(sc.nextDouble());
-                        System.out.println("El resultado es: " + a.angulo(a, b, c));
+                        System.out.println("El resultado es: " + a.angulo(a, b));
                     }
 
                 }
@@ -359,7 +357,7 @@ public class Main {
                         d.setX(sc.nextDouble());
                         d.setY(sc.nextDouble());
                         d.setZ(sc.nextDouble());
-                        System.out.println("El resultado es: " + a.angulo(b));
+                        System.out.println("El resultado es: " + a.angulo(b, a));
                     }
                 }
 
@@ -367,7 +365,6 @@ public class Main {
                     System.out.println("Ingrese una dimension");
                     System.out.println("1. IgMatR2");
                     System.out.println("2. IgMatR3");
-                    System.out.println("3. IgMatR4");
                     opcion = sc.nextInt();
 
 
@@ -388,15 +385,7 @@ public class Main {
                         System.out.println("3. rotacion en w");
                         opcion = sc.nextInt();
                     }
-                    if (opcion == 3) {
-                        System.out.println("Ingrese su opcion");
-                        System.out.println("1. rotacion en x");
-                        System.out.println("2. rotacion en y");
-                        System.out.println("3. rotacion en w");
-                        opcion = sc.nextInt();
 
-
-                    }
 
 
                 }
