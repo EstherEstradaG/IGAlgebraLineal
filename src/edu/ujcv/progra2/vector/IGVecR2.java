@@ -37,8 +37,8 @@ public IGVecR2 (IGVecR2 b){
         public IGVecR2 suma (IGVecR2 b){
 
             IGVecR2 retval = new IGVecR2();
-            retval.x = x + b.x;
-            retval.y = y + b.y;
+            retval.x = (x + b.x);
+            retval.y = (y + b.y);
             System.out.println(retval);
             return retval;
         }

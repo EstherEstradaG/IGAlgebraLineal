@@ -51,9 +51,9 @@ public class Main {
                         IGVecR2 b = new IGVecR2();
                         System.out.println("Ingrese x2 y y2");
                         b.setX(sc.nextDouble());
-                        b.setX(sc.nextDouble());
-                        System.out.println("El resultado es: " + );
-
+                        b.setY(sc.nextDouble());
+                        IGVecR2 r = a.suma(b);
+                        System.out.println("El resultado es: " +r.getX()+ " , "+r.getY());
 
                     }
 
@@ -65,8 +65,9 @@ public class Main {
                         IGVecR2 b = new IGVecR2();
                         System.out.println("Ingrese x2 y y2");
                         b.setX(sc.nextDouble());
-                        b.setX(sc.nextDouble());
-                        System.out.println("El resultado es: " + a.resta(b));
+                        b.setY(sc.nextDouble());
+                        IGVecR2 r = a.resta(b);
+                        System.out.println("El resultado es: " +r.getX()+" , "+r.getY());
                     }
 
                     if (opcion == 3) {
@@ -75,10 +76,13 @@ public class Main {
                         a.setX(sc.nextDouble());
                         a.setY(sc.nextDouble());
                         IGVecR2 b = new IGVecR2();
+                        System.out.println("Ingrese x2 y y2");
+                        b.setX(sc.nextDouble());
+                        b.setY(sc.nextDouble());
                         System.out.println("Ingrese alpha");
                         double alpha = sc.nextDouble();
-                        IGVecR2 resultado = a.escalarPorVector(alpha);
-                        System.out.println("El resultado es: " + resultado);
+                        IGVecR2 r = a.escalarPorVector(alpha);
+                        System.out.println("El resultado es: " + r.getX()+" , " +r.getY());
 
                     }
 
@@ -90,8 +94,9 @@ public class Main {
                         IGVecR2 b = new IGVecR2();
                         System.out.println("Ingrese x2 y y2");
                         b.setX(sc.nextDouble());
-                        b.setX(sc.nextDouble());
-                        System.out.println("El resultado es: " + a.productoPunto(b));
+                        b.setY(sc.nextDouble());
+                        double r = a.productoPunto(b);
+                        System.out.println("El resultado es: " + r);
                     }
 
                     if (opcion == 5) {
@@ -102,8 +107,9 @@ public class Main {
                         IGVecR2 b = new IGVecR2();
                         System.out.println("Ingrese x2 y y2");
                         b.setX(sc.nextDouble());
-                        b.setX(sc.nextDouble());
-                        System.out.println("El resultado es: " + a.angulo(a, b));
+                        b.setY(sc.nextDouble());
+                        double r = a.angulo(b,a);
+                        System.out.println("El resultado es: " + r);
                     }
 
                     if (opcion == 6) {
@@ -114,7 +120,7 @@ public class Main {
                         IGVecR2 b = new IGVecR2();
                         System.out.println("Ingrese x2 y y2");
                         b.setX(sc.nextDouble());
-                        b.setX(sc.nextDouble());
+                        b.setY(sc.nextDouble());
                         System.out.println("El resultado es: " + a.magnitud(b));
                     }
 
@@ -365,6 +371,7 @@ public class Main {
                     System.out.println("Ingrese una dimension");
                     System.out.println("1. IgMatR2");
                     System.out.println("2. IgMatR3");
+                    System.out.println("3. IgMatR4");
                     opcion = sc.nextInt();
 
 
@@ -385,7 +392,14 @@ public class Main {
                         System.out.println("3. rotacion en w");
                         opcion = sc.nextInt();
                     }
+                    if (opcion == 3) {
+                        System.out.println("Ingrese su opcion");
+                        System.out.println("1. rotacion en x");
+                        System.out.println("2. rotacion en y");
+                        System.out.println("3. rotacion en w");
+                        opcion = sc.nextInt();
 
+                    }
 
 
                 }
