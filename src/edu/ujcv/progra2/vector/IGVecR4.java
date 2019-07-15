@@ -11,6 +11,7 @@ public class IGVecR4 {
         this.w = 0;
         this.x = 0;
         this.y = 0;
+        this.z = z;
     }
 
 
