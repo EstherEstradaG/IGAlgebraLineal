@@ -432,12 +432,31 @@ public class Main {
                         if (opcion == 1) {
                             System.out.println("ingrese una opcion");
                             System.out.println("1. suma");
+                            System.out.println("2. resta");
                             System.out.println("2. multiplicacion");
                             System.out.println("3. columna por matriz");
                             System.out.println("4. escalar por matriz");
                             System.out.println("5. rotacion");
                             opcion = sc.nextInt();
 
+                            if (opcion == 1){
+
+                            }
+
+                            if (opcion == 2) {
+
+                            }
+
+                            if (opcion == 3){
+
+                            }
+                            if (opcion == 4){
+
+                            }
+
+                            if (opcion == 5){
+
+                            }
                         }
 
 
@@ -461,14 +480,6 @@ public class Main {
                             }
                         }
 
-
-                        if (opcion == 3) {
-                            System.out.println("Ingrese su opcion");
-                            System.out.println("1. rotacion en x");
-                            System.out.println("2. rotacion en y");
-                            System.out.println("3. rotacion en w");
-                            opcion = sc.nextInt();
-
                         }
 
 
@@ -477,5 +488,4 @@ public class Main {
             }
         }
     }
-}
 

@@ -20,7 +20,6 @@ public class IGMatR3 {
         retval.col3.setY(this.col3.getY() * 0);
         retval.col3.setZ(this.col3.getZ() * 1);
 
-
         return retval;
      }
 
