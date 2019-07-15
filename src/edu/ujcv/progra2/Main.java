@@ -52,7 +52,7 @@ public class Main {
                         System.out.println("Ingrese x2 y y2");
                         b.setX(sc.nextDouble());
                         b.setX(sc.nextDouble());
-                        System.out.println("El resultado es: " + a.suma(b));
+                        System.out.println("El resultado es: " + );
 
 
                     }
