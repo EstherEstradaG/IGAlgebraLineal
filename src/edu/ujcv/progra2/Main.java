@@ -17,7 +17,6 @@ public class Main {
         System.out.println("Ingrese su opcion");
         System.out.println("1. Vectores");
         System.out.println("2. Matrices");
-        System.out.println("0. Salir");
         int opcion = sc.nextInt();
 
 
@@ -433,10 +432,10 @@ public class Main {
                             System.out.println("ingrese una opcion");
                             System.out.println("1. suma");
                             System.out.println("2. resta");
-                            System.out.println("2. multiplicacion");
-                            System.out.println("3. columna por matriz");
-                            System.out.println("4. escalar por matriz");
-                            System.out.println("5. rotacion");
+                            System.out.println("3. multiplicacion");
+                            System.out.println("4. columna por matriz");
+                            System.out.println("5. escalar por matriz");
+                            System.out.println("6. rotacion");
                             opcion = sc.nextInt();
 
                             if (opcion == 1){
