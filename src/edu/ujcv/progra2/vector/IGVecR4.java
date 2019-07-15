@@ -11,10 +11,22 @@ public class IGVecR4 {
         this.w = 0;
         this.x = 0;
         this.y = 0;
+        this.z = 0;
+    }
+
+public IGVecR4(double w, double x, double y, double z){
+        this.w = w;
+        this.x = x;
+        this.y = y;
         this.z = z;
     }
 
-
+    public IGVecR4 (IGVecR4 b){
+        this.w = b.w;
+        this.x = b.x;
+        this.y = b.y;
+        this.z = b.z;
+    }
 
     public IGVecR4 suma(IGVecR4 b) {
         IGVecR4 retval = new IGVecR4();
